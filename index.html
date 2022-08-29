@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>javascript games</title>
+</head>
+<body>
+	 <div id="start">
+            <div class="load"></div>
+            <div class="total-skor"><h1>Skor <span id="total-skor">0</span></h1></div>
+
+            <button id="btn-start">
+                Oyuna Başla
+            </button>
+            <div class="nickname"><input type="text" placeholder="Nickname" id="nickname"></div>
+        </div>
+        <div id="after-start">
+        	 <div class="total-skor"><h1>Skor <span id="aftertotal-skor">0</span></h1></div>
+        	 <button id="btnafter-start">
+                Tekrar Oyna
+            </button>
+            <div class="nickname"><input disabled type="text" placeholder="Nickname" id="nickname"></div>
+        </div>
+        
+<div class="contanier" id="contanier">
+ 	<div class="NickNamePanel"><h1 id="NickNamePanel"></h1></div>
+	<div class="skor"><h1>Skor <span id="skor"></span></h1></div>
+	<div class="time"><h1>Süre <span id="time"></span>sn</h1></div>
+	<div id="canvas">
+		<div id="box"></div>
+	</div>
+	<div id="alert-bonus"><h3>+3 bonus</h3></div>
+	<div class="skorPanel">
+		<h1 id="NickNamePanel">Oyuncu 1 <span id="NickNamePanelleft"></span></h1>
+	</div>
+	<div class="bonus" id="bonusPanel">
+		<h1 id="bonusSoru">558+996=?</h1>
+		<div><input type="number" id="returnBonus"></div>
+		<div><button class="btnBonus" id="btnBonus">Bonus Kazan</button></div>
+	</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+html,body{
+	margin: 0px;
+	padding: 0px;
+	transition: 1.3s;
+}
+#after-start{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    z-index:999999999;
+    background-color:gray;
+    opacity:0.9;
+    }
+#start{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    z-index:999999999;
+    background-color:gray;
+    opacity:0.9;
+}
+#btn-start{
+    width: 150px;
+    height: 75px;
+    color:black;
+    font-size:25px;
+    border: none;
+    background-color: chartreuse;
+    text-align: center;
+    position: absolute;
+    z-index: 9999999999;
+
+    animation:btnstart 3s Linear infinite;
+}
+#btnafter-start{
+     width: 150px;
+    height: 75px;
+    color:black;
+    font-size:25px;
+    border: none;
+    background-color: chartreuse;
+    text-align: center;
+    position: absolute;
+    z-index: 9999999999;
+    top: 240px;
+    animation:btnstart 3s Linear infinite;
+}
+.nickname{
+    width:250px;
+    height:auto;
+}
+#nickname{
+    width: 250px;
+    height:50px;
+    font-family: sans-serif;
+    font-size:24px;
+    text-align: center;
+    position: absolute;
+    top:340px;
+     z-index: 9999999999;
+}
+.load{
+    width: 100%;
+    height: 5px;
+    background-color:blue;
+    position: absolute;
+    top:0px;
+    transition: 3s;
+ animation:load 3s Linear ;
+
+}
+.total-skor{
+    width: 250px;
+    padding-top:10px;
+    padding-bottom:10px;
+    position: absolute;
+    background-color: #9fbb64;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes load {
+    0%   {width: 0%;}
+    100%   {width: 100%;}
+}
+
+
+@keyframes btnstart {
+
+    0%   {width: 150px;
+        height: 75px;}
+        50%   {width: 185px;
+            height: 100px;}
+
+    100%   {width: 150px;
+        height: 75px;}
+    
+}
+#canvas{
+	position: relative;
+    -webkit-box-shadow: 0px 0px 73px 0px rgba(150,150,150,1);
+-moz-box-shadow: 0px 0px 73px 0px rgba(150,150,150,1);
+box-shadow: 0px 0px 73px 0px rgba(150,150,150,1);
+}
+@keyframes color {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+}
+#box{
+	border-radius: 50%;
+	transition:0.5s;
+	position: absolute;
+	border: 3px solid white;
+	animation:color 2s Linear infinite;
+}
+
+.skor{
+	width:170px;
+	height: 75px;
+	background-color:yellow;
+	position: fixed;
+	top: 5px;
+	left:5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.skor h1{
+	color: black;
+	font-family: sans-serif;
+
+}
+.time{
+    width:170px;
+    height: 75px;
+    background-color:yellow;
+    position: fixed;
+    top: 85px;
+    left:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NickNamePanel{
+    position: fixed;
+    top:5px;
+    background-color:rgb(127,127,127,0.5);
+    width:300px;
+    text-align: center;
+    overflow-x: auto;
+    
+}
+#NickNamePanel{
+    display:inline-block;
+    color: white;
+    font-family: sans-serif;
+    font-size:13px;
+}
+.skorPanel{
+    width:270px;
+    padding-left:15px;
+    padding-right:15px;
+    height:70vh;
+    position: fixed;
+   bottom:30px;
+    right:20px;
+    background-color:rgb(127,127,127,0.3);
+}
+.bonus{
+    width:270px;
+    font-family: sans-serif;
+    color:white;
+    font-size:13px;
+     padding-top:15px;
+    padding-bottom:15px;
+    position: fixed;
+    top:5px;
+    right:20px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bonus input{
+    font-size: 15px;
+    text-align: center;
+    border: none;
+}
+.btnBonus{
+    width:120px;
+    background-color: rgb(46,46,46);
+    color: white;
+    border: none;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-top: 10px;
+}
+#alert-bonus{
+    padding:3px 30px 3px 30px;
+    background-color:rgb(39,186,33,0.6);
+    position: fixed;
+    left:10px;
+    bottom: 30px;
+    display: none;
+    transition:0.8s;
+}
+#alert-bonus h3{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+}
